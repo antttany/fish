@@ -1,0 +1,2683 @@
+html {
+    color: #000;
+    background: #fff
+}
+
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+button,
+fieldset,
+img,
+input {
+    border: 0
+}
+
+address,
+button,
+caption,
+cite,
+code,
+dfn,
+em,
+input,
+optgroup,
+option,
+select,
+strong,
+textarea,
+th,
+var {
+    font: inherit;
+    font-style: normal;
+    font-weight: 400
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+q:after,
+q:before {
+    content: ""
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+legend {
+    color: #000
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin-ext.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-latin.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-cyrillic.woff2) format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-normal-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url(https://static.payu.com/fonts/opensans/opensans-italic-greek.woff2) format("woff2");
+    unicode-range: U+0370-03FF
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+body {
+    color: #13100d;
+    font: 12px "Open Sans", Arial, Tahoma, Helvetica, sans-serif;
+    font-weight: 400
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 5px 0
+}
+
+p {
+    margin: 10px 0;
+    line-height: 21px
+}
+
+p:first-child {
+    margin-top: 0
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+img {
+    max-width: 100%
+}
+
+b,
+strong {
+    font-weight: 700;
+    color: #000
+}
+
+em {
+    font-style: italic
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e3e3e3;
+    margin: 10px 0
+}
+
+i {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    fill: #5f9b87;
+    vertical-align: middle
+}
+
+a {
+    color: #0069cc;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .1s
+}
+
+a:hover {
+    color: #23527c
+}
+
+a:active {
+    color: #163b5c
+}
+
+h1 {
+    color: #13100d;
+    font-size: 18px;
+    font-weight: 700
+}
+
+h2 {
+    color: #6f7476;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    padding-right: 20px
+}
+
+ol,
+ul:not(.unstyled) {
+    padding-left: 15px;
+    line-height: 200%;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+ul:not(.unstyled)>li {
+    position: relative;
+    padding-left: 5px
+}
+
+ul:not(.unstyled)>li:before {
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    background-color: #008558;
+    border-radius: 50px;
+    content: ""
+}
+
+ul.indented>li {
+    padding-left: 13px
+}
+
+ul.indented>li:before {
+    left: -2px
+}
+
+label {
+    display: block;
+    margin-bottom: 3px
+}
+
+label.invalid {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px
+}
+
+label.helper {
+    font-size: 12px;
+    margin-top: 5px
+}
+
+button,
+input,
+select {
+    appearance: none;
+    text-overflow: ""
+}
+
+::placeholder {
+    color: #8c8c8c
+}
+
+.btn,
+button,
+input {
+    font-size: 14px
+}
+
+.btn,
+button,
+input,
+select {
+    display: inline-block;
+    border-radius: 5px
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    color: #000;
+    box-shadow: 1px 1px 3px 0 #f2f2f2;
+    transition: .2s all;
+    font-weight: 400
+}
+
+input[type=checkbox],
+input[type=radio] {
+    border: none;
+    box-shadow: none
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #b2dbed;
+    box-shadow: 0 0 6px 0 #b2dbed
+}
+
+input.invalid,
+input[aria-invalid=true],
+select.invalid,
+select[aria-invalid=true],
+textarea.invalid,
+textarea[aria-invalid=true] {
+    border-color: red
+}
+
+input.invalid:focus,
+input[aria-invalid=true]:focus,
+select.invalid:focus,
+select[aria-invalid=true]:focus,
+textarea.invalid:focus,
+textarea[aria-invalid=true]:focus {
+    box-shadow: 0 0 6px -2px red
+}
+
+select {
+    padding-right: 40px
+}
+
+select {
+    height: 41px
+}
+
+select:not([multiple]) {
+    cursor: pointer;
+    background: url(../images/select-tick.svg) no-repeat right center, linear-gradient(#fff, #fcfcfc)
+}
+
+optgroup {
+    font-size: 14px;
+    font-weight: 700
+}
+
+option {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.btn,
+button,
+input[type=submit] {
+    background: linear-gradient(#44922a, #3f8627);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 11px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: .1s all;
+    width: 100%
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover,
+button:active,
+button:focus,
+button:hover,
+input[type=submit]:active,
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background: linear-gradient(#44922a, #44922a);
+    color: #fff
+}
+
+.btn.disabled,
+.btn:disabled,
+button.disabled,
+button:disabled,
+input[type=submit].disabled,
+input[type=submit]:disabled {
+    background: 0 0;
+    color: silver;
+    pointer-events: none;
+    transition: none
+}
+
+button.action-button {
+    border: 1px solid #d9d9d9;
+    background: linear-gradient(#fdfdfd, #f5f5f5);
+    color: #666;
+    text-decoration: none
+}
+
+button.action-button:active,
+button.action-button:focus,
+button.action-button:hover {
+    border-color: #008558;
+    color: #666
+}
+
+.action-button {
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    transition: .1s all;
+    width: 100%
+}
+
+.action-button.secondary {
+    color: #13100d
+}
+
+.action-button.disabled {
+    background: 0 0;
+    color: silver;
+    pointer-events: none;
+    transition: none
+}
+
+input[type=checkbox],
+input[type=radio] {
+    z-index: -1;
+    position: absolute
+}
+
+input[type=checkbox]+label,
+input[type=radio]+label {
+    min-height: 21px;
+    padding-top: 2px
+}
+
+input[type=checkbox]+label:before,
+input[type=radio]+label:before {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    content: "";
+    background: #fff;
+    border: 2px solid #008558;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 3px
+}
+
+input[type=radio]+label:before {
+    border-radius: 50px
+}
+
+input[type=radio]:checked+label:before {
+    border-color: #008558;
+    background: url(../images/checked-radio.svg) #fff
+}
+
+input[type=checkbox]:checked+label:before {
+    border-color: #008558;
+    background: url(../images/checked-checkbox.svg) #fff
+}
+
+input[type=checkbox]:focus+label:before,
+input[type=radio]:focus+label:before {
+    box-shadow: 0 0 6px 0 #b2dbed
+}
+
+input[type=checkbox]:disabled+label:before,
+input[type=radio]:disabled+label:before {
+    border-color: #b6b6b6
+}
+
+input.invalid[type=checkbox]+label:before,
+input.invalid[type=radio]+label:before {
+    border-color: red
+}
+
+.inline {
+    display: table;
+    width: 100%
+}
+
+.inline>* {
+    display: table-cell
+}
+
+.align--right {
+    text-align: right
+}
+
+.flex {
+    display: flex
+}
+
+.flex--vcenter {
+    align-items: center
+}
+
+.icon-checkmark {
+    border-radius: 10px;
+    background-color: #6ab972;
+    height: 19px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 19px
+}
+
+.icon-checkmark::after {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    height: 11px;
+    left: 6px;
+    position: absolute;
+    top: 3px;
+    transform: rotate(40deg);
+    width: 6px
+}
+
+.icon-info {
+    border-radius: 10px;
+    background-color: #00adba;
+    height: 19px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 19px
+}
+
+.icon-info::after {
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    content: "i";
+    left: 7px;
+    position: absolute;
+    top: -1px
+}
+
+.sprite-traditional {
+    background: url(../images/sprites_traditional.png?build=6bb7bbdedeaa) no-repeat;
+    display: inline-block;
+    height: 34px;
+    width: 70px
+}
+
+.sprite-traditional.pt {
+    background-position: 0 0
+}
+
+.sprite-traditional.bt {
+    background-position: -70px 0
+}
+
+.sprite-traditional.b {
+    background-position: -140px 0
+}
+
+.sprite-traditional.pmb {
+    background-position: -210px 0
+}
+
+.sprite-pbl {
+    background: url(../images/sprites_pbl.png?build=6bb7bbdedeaa) no-repeat 80px 40px;
+    display: inline-block;
+    height: 40px;
+    width: 80px
+}
+
+.sprite-pbl.ab,
+.sprite-pbl.abs {
+    background-position: 0 0
+}
+
+.sprite-pbl.b {
+    background-position: -160px 0
+}
+
+.sprite-pbl.bl,
+.sprite-pbl.blik,
+.sprite-pbl.bliksk {
+    background-position: -240px 0
+}
+
+.sprite-pbl.bnx {
+    background-position: -320px 0
+}
+
+.sprite-pbl.bo {
+    background-position: -400px 0
+}
+
+.sprite-pbl.g {
+    background-position: -480px 0
+}
+
+.sprite-pbl.gs {
+    background-position: -320px -280px
+}
+
+.sprite-pbl.gbx,
+.sprite-pbl.gnbs {
+    background-position: 0 -40px
+}
+
+.sprite-pbl.wm,
+.sprite-pbl.wms {
+    background-position: -80px -40px
+}
+
+.sprite-pbl.i {
+    background-position: -160px -40px
+}
+
+.sprite-pbl.is {
+    background-position: -320px -320px
+}
+
+.sprite-pbl.l {
+    background-position: -320px -40px
+}
+
+.sprite-pbl.mp,
+.sprite-pbl.mps,
+.sprite-pbl.ms {
+    background-position: -400px -40px
+}
+
+.sprite-pbl.m {
+    background-position: -480px -40px
+}
+
+.sprite-pbl.rbczs,
+.sprite-pbl.rf {
+    background-position: -80px -80px
+}
+
+.sprite-pbl.o,
+.sprite-pbl.os {
+    background-position: -240px -80px
+}
+
+.sprite-pbl.paypal {
+    background-position: -320px -80px
+}
+
+.sprite-pbl.p {
+    background-position: -400px -80px
+}
+
+.sprite-pbl.pks {
+    background-position: -240px -320px
+}
+
+.sprite-pbl.pscd {
+    background-position: 0 -120px
+}
+
+.sprite-pbl.mons,
+.sprite-pbl.pg {
+    background-position: -80px -120px
+}
+
+.sprite-pbl.t {
+    background-position: -160px -120px
+}
+
+.sprite-pbl.u {
+    background-position: -240px -120px
+}
+
+.sprite-pbl.w,
+.sprite-pbl.ws {
+    background-position: -320px -120px
+}
+
+.sprite-pbl.wc {
+    background-position: -400px -120px
+}
+
+.sprite-pbl.era {
+    background-position: -80px -160px
+}
+
+.sprite-pbl.bt {
+    background-position: -160px -160px
+}
+
+.sprite-pbl.gp {
+    background-position: -240px -160px
+}
+
+.sprite-pbl.pf,
+.sprite-pbl.pfs {
+    background-position: -320px -160px
+}
+
+.sprite-pbl.cs,
+.sprite-pbl.css {
+    background-position: -400px -160px
+}
+
+.sprite-pbl.it {
+    background-position: -480px -160px
+}
+
+.sprite-pbl.sb {
+    background-position: 0 -200px
+}
+
+.sprite-pbl.sp {
+    background-position: -80px -200px
+}
+
+.sprite-pbl.trp {
+    background-position: -160px -200px
+}
+
+.sprite-pbl.uc {
+    background-position: -240px -200px
+}
+
+.sprite-pbl.cb,
+.sprite-pbl.cbs {
+    background-position: -320px -200px
+}
+
+.sprite-pbl.kb,
+.sprite-pbl.kbs {
+    background-position: -480px -200px
+}
+
+.sprite-pbl.pt {
+    background-position: 0 -240px
+}
+
+.sprite-pbl.bs {
+    background-position: -80px -240px
+}
+
+.sprite-pbl.plsb {
+    background-position: -160px -240px
+}
+
+.sprite-pbl.sgb {
+    background-position: -240px -240px
+}
+
+.sprite-pbl.nstb {
+    background-position: -320px -240px
+}
+
+.sprite-pbl.rfki {
+    background-position: -400px -240px
+}
+
+.sprite-pbl.jp {
+    background-position: -480px -240px
+}
+
+.sprite-pbl.uni {
+    background-position: 0 -160px
+}
+
+.sprite-pbl.sporo {
+    background-position: 0 -280px
+}
+
+.sprite-pbl.tatra {
+    background-position: -80px -280px
+}
+
+.sprite-pbl.vub {
+    background-position: -160px -280px
+}
+
+.sprite-pbl.posta {
+    background-position: -480px -120px
+}
+
+.sprite-pbl.ceko {
+    background-position: 0 -80px
+}
+
+.sprite-pbl.viamo {
+    background-position: -240px -280px
+}
+
+.sprite-pbl.pbc {
+    background-position: -400px -280px
+}
+
+.sprite-pbl.pid {
+    background-position: -480px -280px
+}
+
+.sprite-pbl.pmb {
+    background-position: 0 -320px
+}
+
+.sprite-pbl.sdd {
+    background-position: -80px -320px
+}
+
+.sprite-pbl.airs {
+    background-position: -160px -320px
+}
+
+.sprite-pbl.ptrl {
+    background-position: -400px -320px
+}
+
+.sprite-pbl.pmbc {
+    background-position: -480px -320px
+}
+
+.sprite-pbl.creds {
+    background-position: -80px 0
+}
+
+.sprite-pbl.jtbs {
+    background-position: -240px -40px
+}
+
+.sprite-pbl.ucczs {
+    background-position: -160px -80px
+}
+
+.sprite-pbl.wys {
+    background-position: -480px -80px
+}
+
+.sprite-pbl.alt {
+    background-position: -400px -200px
+}
+
+.sprite-pbl.bcrs {
+    background-position: 0 -360px
+}
+
+.sprite-pbl.bts {
+    background-position: -160px -360px
+}
+
+.sprite-pbl.ingros {
+    background-position: -80px -360px
+}
+
+.sprite-installments {
+    background: url(../images/sprites_installments.png?build=6bb7bbdedeaa) no-repeat;
+    display: inline-block;
+    height: 34px;
+    width: 34px
+}
+
+.sprite-installments.ai {
+    background-position: 0 0
+}
+
+.sprite-installments.ain {
+    background-position: 0 0
+}
+
+.sprite-installments.im {
+    background-position: -34px 0
+}
+
+.sprite-installments.ik {
+    background-position: -68px 0
+}
+
+.sprite-installments.inb {
+    background-position: -102px 0
+}
+
+.sprite-installments.inscb {
+    background-position: -136px 0
+}
+
+.sprite-installments.inca {
+    background-position: -170px 0
+}
+
+.sprite-installments.insm {
+    background-position: -204px 0
+}
+
+.sprite-dp {
+    background: url(../images/sprites_dp.png?build=6bb7bbdedeaa) no-repeat;
+    display: inline-block
+}
+
+.sprite-dp.apply {
+    background-position: 0 -40px;
+    height: 55px;
+    width: 80px
+}
+
+.sprite-dp.enjoy {
+    background-position: -80px -45px;
+    height: 46px;
+    width: 80px
+}
+
+.sprite-dp.repay {
+    background-position: -160px -40px;
+    height: 55px;
+    width: 80px
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    .sprite-pbl {
+        background-image: url(../images/sprites_pbl@2x.png?build=6bb7bbdedeaa);
+        background-size: 560px 400px
+    }
+
+    .sprite-traditional {
+        background-image: url(../images/sprites_traditional@2x.png?build=6bb7bbdedeaa);
+        background-size: 280px 34px
+    }
+
+    .sprite-installments {
+        background-image: url(../images/sprites_installments@2x.png?build=6bb7bbdedeaa);
+        background-size: 238px 34px
+    }
+
+    .sprite-dp {
+        background-image: url(../images/sprites_dp@2x.png?build=6bb7bbdedeaa);
+        background-size: 350px 145px
+    }
+}
+
+body {
+    background-color: #fff
+}
+
+#app,
+.app,
+body,
+html {
+    height: 100%;
+    width: 100%
+}
+
+.app {
+    animation: fadein 1.5s;
+    background-color: #002224;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    position: relative;
+    -webkit-animation: fadein 1.5s
+}
+
+.app>div {
+    display: table-row
+}
+
+.app>div.logo-lang-container {
+    background-color: #00191b;
+    height: 1%
+}
+
+.app>div.logo-lang-container>div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px
+}
+
+.app>div.logo-lang-container>div>svg {
+    flex-shrink: 0
+}
+
+.app>div.regulations-container {
+    background: rgba(0, 0, 0, .1);
+    height: 5%
+}
+
+.app>div.regulations-container>section {
+    color: #d9d9d9;
+    display: block;
+    font-size: 11px;
+    padding: 10px 0 10px 50px;
+    width: 1100px
+}
+
+.app>div.regulations-container>section .regulations {
+    margin: 5px 0
+}
+
+.regulations-container strong {
+    color: inherit
+}
+
+.regulations-container ol {
+    line-height: 14px
+}
+
+.regulations-container a,
+.regulations-container a:active,
+.regulations-container a:hover {
+    color: #d9d9d9;
+    text-decoration: underline
+}
+
+.regulations-container .regulations {
+    font-size: 11px;
+    line-height: 14px
+}
+
+.regulations-container .regulations p {
+    line-height: inherit;
+    margin: 5px 0
+}
+
+body>svg {
+    display: none
+}
+
+.row {
+    display: table;
+    width: 100%
+}
+
+.row>* {
+    display: table-cell
+}
+
+.form-row {
+    margin: 10px 0;
+    position: relative
+}
+
+.form-row>:not(label) {
+    width: 100%
+}
+
+.form-row input[readonly] {
+    background: #f2f2f2;
+    box-shadow: none
+}
+
+.form-row>input[type=checkbox]+label,
+.form-row>input[type=radio]+label {
+    padding-left: 30px;
+    position: relative
+}
+
+.form-actions {
+    margin-top: 15px;
+    position: relative
+}
+
+.inline.separated>* {
+    padding: 0 5px
+}
+
+.inline.separated>:first-child {
+    padding-left: 0
+}
+
+.inline.separated>:last-child {
+    padding-right: 0
+}
+
+.buttonlike {
+    border: 1px solid #d9d9d9;
+    background: linear-gradient(#fdfdfd, #f5f5f5);
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none
+}
+
+.buttonlike:not(.disabled):active,
+.buttonlike:not(.disabled):focus,
+.buttonlike:not(.disabled):hover {
+    background-color: #fdfdfd;
+    border-color: #008558;
+    color: #666;
+    text-decoration: none
+}
+
+.buttonlike:not(.disabled):active {
+    background-color: #f5f5f5
+}
+
+.buttonlike>div>img,
+.buttonlike>div>svg {
+    display: block;
+    margin: 0 auto;
+    max-height: 28px;
+    width: 50px
+}
+
+.buttonlike h4 {
+    color: #000;
+    font-weight: 600
+}
+
+.block {
+    padding: 10px 15px 10px 0;
+    border-radius: 3px
+}
+
+.block.disabled {
+    background: #f7f7f7;
+    cursor: auto;
+    filter: grayscale(1)
+}
+
+.block.disabled:hover {
+    background: #f7f7f7;
+    cursor: auto
+}
+
+.block>div {
+    vertical-align: middle
+}
+
+.block.disabled>* {
+    opacity: .25
+}
+
+.line-break {
+    background: linear-gradient(transparent 0, transparent 49%, #e3e3e3 50%, #e3e3e3 51%, transparent 52%, transparent 100%)
+}
+
+.line-break>h2 {
+    background-color: #fafafa;
+    font-size: 17px;
+    padding-right: 10px
+}
+
+.line-break>span {
+    background-color: #fafafa;
+    color: #bebebe;
+    padding: 0 10px
+}
+
+.extra-actions {
+    text-align: center
+}
+
+.extra-actions>* {
+    margin: 10px 0
+}
+
+.extra-actions>.block {
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #13100d
+}
+
+.sidebar-header {
+    text-align: center;
+    display: block;
+    padding-right: 0
+}
+
+main {
+    vertical-align: top;
+    text-align: center
+}
+
+.column {
+    width: 300px;
+    margin: 30px 10px 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left
+}
+
+.column-2 {
+    width: 400px
+}
+
+.column-wide {
+    width: 525px
+}
+
+article,
+aside {
+    border-radius: 10px;
+    overflow: hidden
+}
+
+article>div>*,
+aside>* {
+    padding: 20px
+}
+
+aside>div+div {
+    padding-top: 0
+}
+
+aside .line-break {
+    margin-bottom: 15px;
+    margin-top: 20px
+}
+
+aside .line-break.first {
+    margin-top: 0
+}
+
+.currency-change-note {
+    margin-top: 10px;
+    color: #666
+}
+
+.order-data {
+    color: #008558
+}
+
+aside em {
+    display: block;
+    margin-bottom: 5px;
+    font-style: normal
+}
+
+aside em>div:first-child {
+    color: #666
+}
+
+aside em>.price {
+    white-space: nowrap
+}
+
+aside .quantity {
+    color: #bfbfbf;
+    font-style: italic
+}
+
+aside em>div+div {
+    padding-left: 10px;
+    text-align: right;
+    color: #008558
+}
+
+aside em:last-of-type>div:last-child {
+    font-size: 16px;
+    font-weight: 700
+}
+
+aside {
+    background-color: #fcfcfc
+}
+
+aside .payu-mini-installments-widget .payu-mini-installments-widget-details {
+    color: #169bd5 !important;
+    text-decoration: none !important;
+    font-weight: 300 !important
+}
+
+aside .payu-mini-installments-widget .payu-mini-installments-widget-amount,
+aside .payu-mini-installments-widget .payu-mini-installments-widget-separator {
+    color: #666 !important
+}
+
+aside .installments-sidebar-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px
+}
+
+aside .installments-sidebar-footer>svg {
+    fill: #6ab972
+}
+
+.blik>header>h1 {
+    vertical-align: middle
+}
+
+.blik>header>div {
+    text-align: right;
+    vertical-align: middle
+}
+
+.blik>header>div>img {
+    height: 30px
+}
+
+.installments>footer {
+    color: #333
+}
+
+.installments p {
+    margin: 10px 0;
+    line-height: normal
+}
+
+.installments .main>ul {
+    margin: 10px 0;
+    text-align: center
+}
+
+.installments .main>ul>li {
+    vertical-align: middle;
+    margin: 0 5%
+}
+
+.installment-provider-logo {
+    width: 80px;
+    text-align: center
+}
+
+.delayed-payment .main {
+    padding-top: 0
+}
+
+.delayed-payment .form-actions {
+    margin-top: 20px
+}
+
+.delayed-payment .form-email-input {
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+
+.delayed-payment header svg {
+    display: block;
+    margin: 0 auto;
+    width: 90px
+}
+
+.mastercard-status-info-container {
+    font-weight: 400;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important
+}
+
+.mastercard-status-info-container>div {
+    vertical-align: middle
+}
+
+.mastercard-status-info-container>div:first-child {
+    width: 25px
+}
+
+.common .main .block>div:first-child {
+    text-align: center;
+    width: 80px
+}
+
+.traditional>div {
+    margin: 0 5px
+}
+
+.traditional .block:not(:first-child) {
+    margin-top: 10px
+}
+
+.traditional .block>div:first-child {
+    text-align: center;
+    width: 90px
+}
+
+.traditional .block>div:first-child>img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.wallets .main .block>div:first-child {
+    width: 70px;
+    text-align: center;
+    padding-right: 15px
+}
+
+.wallets .main .block>div:first-child>img {
+    max-width: 100px;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.sepa .invalid>.sepa-select__control {
+    border-color: red
+}
+
+.sepa .sepa-select__menu-notice--no-options {
+    color: red
+}
+
+.sepa .sepa-select__control--is-focused,
+.sepa .sepa-select__control--is-focused:hover {
+    border-color: #b2dbed;
+    box-shadow: 0 0 6px 0 #b2dbed
+}
+
+.sepa .sepa-select__value-container {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.sepa .sepa-select__indicator {
+    padding: 6px
+}
+
+.sepa .sepa-select__input-container>input,
+.sepa .sepa-select__input-container>input:focus {
+    border-color: transparent;
+    box-shadow: none;
+    transition: none
+}
+
+.sepa .sepa-select__icon {
+    margin-right: 8px
+}
+
+.sepa .sepa-select__icon>svg {
+    height: 17px;
+    width: 25px;
+    border: 1px solid #eee
+}
+
+.status {
+    font-size: 13px
+}
+
+.status h1 {
+    font-size: 18px
+}
+
+.status>header>div>svg {
+    display: block;
+    margin: auto;
+    height: 24px;
+    width: 39px
+}
+
+.status.error h1 {
+    color: red
+}
+
+.status.default h1 {
+    color: #000
+}
+
+.status div.content-summary {
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 10px 0 10px 0
+}
+
+.status p.correlation-id {
+    font-size: 11px;
+    color: #666;
+    text-align: right
+}
+
+.column>.regulations {
+    padding: 10px;
+    color: #d9d9d9
+}
+
+.visa-checkout-button {
+    margin: 25px 0;
+    text-align: center
+}
+
+.dp-steps-section ol {
+    line-height: normal
+}
+
+.dp-steps-section ol li {
+    padding-bottom: 15px
+}
+
+.dp-steps-section ol li::marker {
+    color: #008558;
+    font-weight: 650
+}
+
+.dp-steps-section ol li .header {
+    font-weight: 700
+}
+
+.dp-steps-section ol li .description {
+    padding-top: 2px;
+    color: #6f7476
+}
+
+.dp-steps-section .additional-info {
+    margin-bottom: 20px;
+    color: #6f7476
+}
+
+.popup {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .35)
+}
+
+.popup>header {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff
+}
+
+.popup>header>* {
+    vertical-align: middle
+}
+
+.popup>header>h1 {
+    font-size: 19px;
+    padding-right: 10px
+}
+
+.popup>header>div {
+    text-align: right
+}
+
+.popup input {
+    width: 100%
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    z-index: 1000
+}
+
+.transparent-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2
+}
+
+.merchant-logo {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.merchant-logo>img {
+    width: 115px;
+    margin: auto;
+    padding-bottom: 10px
+}
+
+.or-view {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto
+}
+
+.foreign-applicant-sidebar {
+    margin-top: 10px
+}
+
+.foreign-applicant-sidebar .header {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.foreign-applicant-sidebar .footer {
+    font-size: 10px;
+    font-weight: 100
+}
+
+.foreign-applicant-sidebar input[type=checkbox]+label:before {
+    width: 16px;
+    height: 16px;
+    top: auto
+}
+
+.foreign-applicant-sidebar input[type=checkbox]:checked+label:before {
+    background-size: 12px
+}
+
+.foreign-applicant-sidebar .form-row>input[type=checkbox]+label.checkbox-label {
+    padding-left: 25px
+}
+
+.foreign-applicant-sidebar svg {
+    display: block;
+    float: right
+}
+
+@keyframes fadein {
+    from {
+        box-shadow: 0 0 0 3000px #002224 inset
+    }
+
+    to {
+        box-shadow: 0 0 0 3000px rgba(0, 34, 36, 0) inset
+    }
+}
+
+@media (min-width:1250px) {
+    div+.column-2 {
+        margin-right: 355px
+    }
+}
+
+@media (max-width:1150px) {
+    .app>div.regulations-container>section {
+        width: auto;
+        padding-right: 30px
+    }
+}
+
+@media (max-width:900px) {
+    .column-wide {
+        width: 375px
+    }
+
+    .wire-list>li {
+        flex-basis: 33%
+    }
+}
+
+@media (max-width:740px) {
+    .column-1 {
+        width: 250px
+    }
+}
+
+@media (max-width:700px) {
+    .column-1>aside>div {
+        padding: 10px 20px
+    }
+
+    .column {
+        width: 400px;
+        margin: 10px 10px 0
+    }
+
+    .popup {
+        max-width: 400px
+    }
+
+    .app>div.regulations-container>section {
+        padding: 5px 15px
+    }
+}
+
+@media (max-width:445px) {
+    .column {
+        padding: 0 3px;
+        margin: 10px auto 0
+    }
+
+    .app>div.logo-lang-container>section {
+        padding-left: 25px
+    }
+
+    .wire-list>li {
+        flex-basis: 50%
+    }
+
+    .popup-overlay {
+        padding: 10px 25px
+    }
+}
+
+@media (max-width:406px) {
+    .column {
+        width: 100%;
+        min-width: 350px
+    }
+
+    .app>div.logo-lang-container>section {
+        padding-left: 10px
+    }
+
+    .app>div.regulations-container>section {
+        padding: 0 10px
+    }
+}
+
+@media (max-width:366px) {
+    .column {
+        padding: 0
+    }
+
+    .modal-content {
+        width: 98%
+    }
+}
+
+.preloader {
+    height: 100%;
+    text-align: center;
+    width: 100%
+}
+
+.preloader>section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center
+}
+
+.preloader>section>svg {
+    animation: loader-rotate .5s linear infinite;
+    transform-origin: 50% 50%;
+    width: 36px
+}
+
+@keyframes loader-rotate {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.apple-pay-warning {
+    align-items: center;
+    display: flex
+}
+
+.apple-pay-warning>svg {
+    fill: #900;
+    height: 22px;
+    width: 22px
+}
+
+.button-complex {
+    align-items: center;
+    background: linear-gradient(180deg, #fff 0, #f8f8f8 100%);
+    border: 1px solid #e3e4e2;
+    border-radius: 5px;
+    color: #13100d;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 5px;
+    min-height: 74px;
+    justify-content: space-between;
+    padding: 8px 18px;
+    text-align: left;
+    text-decoration: none;
+    width: 100%
+}
+
+.button-complex.promo {
+    border-color: #6ab972
+}
+
+.button-complex:disabled {
+    filter: grayscale(1);
+    pointer-events: none
+}
+
+.button-complex:disabled>* {
+    opacity: .5
+}
+
+.button-complex:not(:disabled):active,
+.button-complex:not(:disabled):focus,
+.button-complex:not(:disabled):hover {
+    border-color: #008558;
+    color: #13100d;
+    background: inherit
+}
+
+.button-complex svg {
+    height: auto;
+    width: auto
+}
+
+.button-complex>div:first-child>h4 {
+    font-weight: 600
+}
+
+.button-complex>div:first-child>span {
+    color: #6f7476
+}
+
+.button-complex>div:last-child {
+    display: flex
+}
+
+.content-wrapper>article {
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px
+}
+
+.content-wrapper>article>div>header {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0
+}
+
+.content-wrapper>article>div>.main {
+    padding: 10px 0 0 0
+}
+
+.content-wrapper>article>div>.main>:not(:first-child) {
+    margin-top: 10px
+}
+
+.content-wrapper>article>div>.main h2 {
+    margin-top: 5px
+}
+
+.content-wrapper>article>div>footer {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    padding: 20px 0 0 0
+}
+
+.content-wrapper>article>div>footer>svg {
+    height: auto;
+    margin-right: 10px;
+    width: auto
+}
+
+.content-wrapper>article.card header>div {
+    display: flex
+}
+
+.content-wrapper>article.card header>div svg {
+    margin-left: 10px
+}
+
+.content-wrapper>article.wire .main .wire-list {
+    display: flex;
+    flex-flow: row wrap
+}
+
+.content-wrapper>article.wire .main .wire-list>li {
+    flex-basis: 25%;
+    text-align: center
+}
+
+.content-wrapper>article.wire .main .wire-list>li>div {
+    margin: 5px;
+    padding: 7px
+}
+
+.content-wrapper>article.hub .main>h2 {
+    margin-bottom: 15px;
+    margin-top: 15px
+}
+
+.content-wrapper>article.hub .main>h2:first-child {
+    margin-top: 0
+}
+
+.content-wrapper>article.hub .main>h4 {
+    font-weight: 700;
+    margin-bottom: 1px
+}
+
+.content-wrapper>article.hub .main .rules-block>.rules {
+    margin-top: 5px;
+    color: #999;
+    font-style: italic;
+    text-align: center
+}
+
+@media (max-width:406px) {
+    .content-wrapper>article {
+        padding: 15px 10px
+    }
+
+    .content-wrapper>article>div {
+        margin: 0 auto
+    }
+}
+
+.currency-list .main .block {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.currency-list .main .block svg {
+    border-radius: 1px;
+    box-shadow: 0 0 1px 1px #d9d9d9;
+    height: 18px;
+    width: 24px
+}
+
+.currency-list .main .block>div:last-child {
+    padding-left: 5px;
+    text-align: right
+}
+
+.currency-list .main .block>div>div {
+    font-size: 12px;
+    font-weight: 200
+}
+
+.inline-box {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0
+}
+
+.inline-box.info {
+    background-color: #f1f6fc
+}
+
+.inline-box.error {
+    background-color: #fcf0f0
+}
+
+.credit-radio-wrapper {
+    position: relative;
+    margin-left: 5px;
+    min-height: 70px;
+    margin-bottom: 3px
+}
+
+.credit-radio-wrapper .form-row {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.credit-radio-wrapper .form-row:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border: 1px solid #4fbaab;
+    position: absolute;
+    top: 10px;
+    left: 9px
+}
+
+.credit-radio-wrapper .form-row.disabled:before {
+    border-color: #b6b6b6
+}
+
+.credit-radio-wrapper .form-row.disabled .radio-label-header {
+    color: #868686
+}
+
+.credit-radio-wrapper .form-row.disabled .radio-label-subheader {
+    color: #b6b6b6
+}
+
+.credit-radio-wrapper:last-of-type .form-row:last-of-type:before {
+    display: none
+}
+
+.credit-radio-wrapper header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff
+}
+
+.credit-radio-wrapper header h6 {
+    -moz-transform-origin: 0 50%;
+    -moz-transform: rotate(-90deg) translate(-50%, 50%);
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+    -o-transform-origin: 0 50%;
+    -o-transform: rotate(-90deg) translate(-50%, 50%);
+    -ms-transform-origin: 0 50%;
+    -ms-transform: rotate(-90deg) translate(-50%, 50%);
+    transform-origin: 0 50%;
+    transform: rotate(-90deg) translate(-50%, 50%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 18px;
+    margin: auto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px
+}
+
+.credit-radio-wrapper.blue header {
+    background-color: #00aeef
+}
+
+.credit-radio-wrapper.green header {
+    background-color: #418c28
+}
+
+.credit-radio-wrapper.disabled header {
+    background-color: #b6b6b6
+}
+
+.credit-radio-wrapper>div {
+    padding-left: 25px;
+    margin-left: 5px;
+    vertical-align: middle;
+    box-sizing: border-box
+}
+
+.credit-radio-wrapper.noHeader>div {
+    padding-left: 0
+}
+
+.credit-radio-wrapper .radio-label-header {
+    font-weight: 400;
+    font-size: 12px;
+    color: #418c28
+}
+
+.credit-radio-wrapper .radio-label-header strong {
+    color: inherit
+}
+
+.credit-radio-wrapper .radio-label-header b {
+    color: inherit
+}
+
+.credit-radio-wrapper .radio-label-subheader {
+    color: #999;
+    font-weight: 400;
+    font-size: 10px;
+    display: block
+}
+
+.credit-radio-wrapper .calculation-details {
+    font-size: 11px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .6s linear
+}
+
+.credit-radio-wrapper .calculation-details.shown {
+    max-height: 114px
+}
+
+.credit-radio-wrapper .calculation-details ul:not(.unstyled) {
+    line-height: 150%;
+    margin-top: 0
+}
+
+.credit-radio-wrapper .calculation-details .provider .bold {
+    font-weight: 700
+}
+
+.credit-radio-wrapper .calculation-details .provider a {
+    margin-left: 5px;
+    text-decoration: none
+}
+
+.credit-radio-wrapper div .form-row:only-child {
+    min-height: 70px;
+    display: flex;
+    align-items: center
+}
+
+.credit-radio-wrapper div .form-row:only-child label {
+    margin: 0;
+    padding-top: 0
+}
+
+.credit-radio-wrapper div .form-row:only-child label:before {
+    top: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.credit-radio-wrapper:last-of-type div .form-row:only-child:before {
+    display: block;
+    top: 0;
+    height: 55%
+}
+
+.credit-radio-wrapper:first-of-type div .form-row:only-child:before {
+    display: block;
+    top: 0;
+    height: 55%;
+    -moz-transform-origin: bottom;
+    -moz-transform: rotate(180deg);
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotate(180deg);
+    -o-transform-origin: bottom;
+    -o-transform: rotate(180deg);
+    -ms-transform-origin: bottom;
+    -ms-transform: rotate(180deg);
+    transform-origin: bottom;
+    transform: rotate(180deg)
+}
+
+.credit-radio-wrapper div:only-child .form-row:only-child {
+    display: block;
+    margin-bottom: 10px
+}
+
+.credit-radio-wrapper div:only-child .form-row:only-child:before {
+    display: none
+}
+
+.credit-radio-wrapper div:only-child .form-row:only-child label:before {
+    bottom: auto
+}
+
+.credit-radio-wrapper div:only-child .form-row:only-child label .radio-label-header {
+    line-height: 20px
+}
+
+.installments.radio .invalid {
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 0
+}
+
+.language-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 1;
+    padding-left: 15px
+}
+
+.language-switcher>a {
+    color: #53acfa;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.language-switcher>a:hover {
+    color: #fff
+}
+
+.masterpass header>div {
+    display: flex
+}
+
+.masterpass header>div>div {
+    border-left: 1px solid #d0d0d0;
+    height: 35px;
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative
+}
+
+.masterpass header>div>div>i {
+    color: #a0a0a0;
+    font-size: 6px;
+    font-style: normal;
+    position: absolute;
+    top: -3px
+}
+
+.masterpass>.main>form>div {
+    line-height: normal;
+    margin: 10px 0
+}
+
+.masterpass>.main>.agreement {
+    color: #999;
+    line-height: normal;
+    margin: 10px 0;
+    text-align: center
+}
+
+.masterpass>.main .block>div:first-child {
+    text-align: center;
+    width: 75px
+}
+
+.message {
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 10px
+}
+
+.message>div {
+    padding: 10px
+}
+
+.message>div:first-child {
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    width: 50px
+}
+
+.message>div.content {
+    padding-right: 20px;
+    position: relative
+}
+
+.message>div.content>button {
+    background: 0 0;
+    color: inherit;
+    font-size: 150%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: initial
+}
+
+.message>div.content>h5 {
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.message svg {
+    fill: #fff
+}
+
+.message.warning {
+    background-color: #d7eff1
+}
+
+.message.warning>div:first-child {
+    background-color: #39adbb
+}
+
+.message.success {
+    background-color: #edf3cd
+}
+
+.message.success>div:first-child {
+    background-color: #a6c307
+}
+
+.message.error {
+    background-color: #f7cce5
+}
+
+.message.error>div:first-child {
+    background-color: #d7007f
+}
+
+.message.info {
+    background-color: #ddf1ee
+}
+
+.message.info>div:first-child {
+    background-color: #54bbab
+}
+
+.payment-card>header>div {
+    text-align: right
+}
+
+.payment-card>header>div>svg {
+    margin-left: 10px;
+    height: 24px
+}
+
+.payment-card>header>div>svg.acceptance-mastercard {
+    width: 39px
+}
+
+.payment-card>header>div>svg.acceptance-visa {
+    width: 63px
+}
+
+.payment-card>.main>ul {
+    margin: 10px 0;
+    text-align: center
+}
+
+.payment-card>.main>ul>li {
+    vertical-align: middle;
+    margin: 0 5%
+}
+
+.payment-card>.main>.line-break {
+    text-align: center
+}
+
+.charity {
+    margin-bottom: 15px
+}
+
+.charity .organization>img {
+    height: 19px;
+    margin-left: 3px;
+    vertical-align: text-bottom
+}
+
+.charity .donation {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 15px 0
+}
+
+.charity .donation>img {
+    max-width: 65px
+}
+
+.charity .donation-amount {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.charity .donation-amount>select {
+    font-weight: 700
+}
+
+.charity .donation-regulations {
+    margin-top: 15px
+}
+
+.charity-list button>div:last-child {
+    flex-basis: 65px
+}
+
+.amount {
+    display: flex;
+    flex-direction: column
+}
+
+.amount>* {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 0;
+    width: 100%
+}
+
+.amount>.highlight {
+    font-weight: 700
+}
+
+.amount>.highlight .price {
+    font-size: 16px
+}
+
+.amount>*>:first-child {
+    padding-right: 5px;
+    white-space: nowrap
+}
+
+.amount>*>:last-child {
+    color: #008558;
+    text-align: right;
+    word-break: break-all
+}
+
+.content-wrapper>article>div>.main>.ctp-card-info {
+    margin-top: 0
+}
+
+.content-wrapper>article.click-to-pay header>div {
+    display: flex
+}
+
+.content-wrapper>article.click-to-pay header>div svg {
+    margin-left: 5px
+}
+
+.inline-box.ctp-card-info {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 8px 0 8px 18px
+}
